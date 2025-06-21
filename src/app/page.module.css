@@ -1,0 +1,90 @@
+.main {
+  display: grid;
+  grid-template-columns: 41.66667% 58.33333%;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden !important;
+}
+.imageContainerHome {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #00aced;
+  z-index: -1;
+  color: #ffffff;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  max-width: 408px;
+  padding: 3rem 4rem;
+}
+.overlay h2 {
+  padding-top: 1rem;
+  line-height: 1.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.overlay h3 {
+  line-height: 1.375rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.01rem;
+}
+.authContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 7% 20%;
+}
+.imageContainerLogo {
+  position: relative;
+  width: 205px;
+  height: 30px;
+}
+.authContainerText {
+  padding-top: 3rem;
+}
+.authContainerText h2 {
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #00aced;
+  margin: 0;
+}
+.authContainerText p {
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #292929;
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  margin: 0;
+  text-shadow: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    grid-template-columns: 100%;
+  }
+  .imageContainerHome {
+    display: none;
+  }
+  .authContainer {
+    padding: 30% 30%;
+  }
+  .overlay {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    height: 100%;
+  }
+  .authContainer {
+    padding: 20% 15%;
+    box-sizing: border-box;
+  }
+  .authContainerText {
+    padding-top: 3rem;
+  }
+}

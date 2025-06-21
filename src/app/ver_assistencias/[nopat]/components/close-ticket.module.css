@@ -1,0 +1,74 @@
+.ticketResolvido {
+  position: relative;
+  width: 80%;
+  color: #787878;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+.ticketResolvidoContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.ticketResolvidoContent h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+.buttonsContainer {
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: right;
+  width: 100%;
+}
+
+.buttonSairF {
+  all: unset;
+  color: #000000;
+  cursor: pointer;
+  width: 140px;
+  height: 36px;
+  border: 2px solid #01aced;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 10%;
+}
+
+.buttonSairF:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #01aced !important;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .ticketResolvido {
+    padding: 0;
+    margin: 0;
+    max-width: unset;
+    width: 100%;
+  }
+  .ticketResolvidoContent {
+    gap: 0.5rem;
+    padding: 2.5rem 0;
+  }
+  .ticketResolvido h1 {
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  .buttonSairF{
+    display: none;
+  }
+}

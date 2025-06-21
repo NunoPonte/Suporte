@@ -1,0 +1,19 @@
+.selectContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.select {
+  width: 100%;
+  font-weight: 500;
+}
+.select:focus {
+  outline: none;
+}
+.selectContainer svg {
+  right: 0;
+  position: absolute;
+  padding: 1rem;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}

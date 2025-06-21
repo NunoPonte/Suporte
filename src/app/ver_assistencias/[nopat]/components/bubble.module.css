@@ -1,0 +1,103 @@
+.bubbleLeft {
+  padding-top: 2rem;
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 5% 40%;
+  overflow-x: hidden;
+}
+.bubbleLeft * {
+  overflow-x: hidden;
+}
+.bubbleRight {
+  padding-top: 2rem;
+  width: 100%;
+  padding-right: 5%;
+  position: relative;
+  display: grid;
+  justify-content: end;
+  grid-template-columns: 40% 5%;
+  overflow-x: hidden;
+}
+.bubbleRight * {
+  overflow-x: hidden;
+}
+.bubble label {
+  padding-left: 1rem;
+  color: #787878;
+  font-weight: 500;
+}
+.text {
+  margin-top: 1rem;
+  border-radius: 6px;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+.padding {
+  padding-left: 1rem;
+}
+.textRight {
+  display: block;
+  text-align: right;
+}
+.text div {
+  padding: 1rem;
+  font-weight: 500;
+}
+.text div div {
+  padding: 0;
+}
+.backgroundGray {
+  background-color: #f8f8f8;
+}
+.backgroundGrayStrong {
+  background-color: #e3e3e3;
+}
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 1rem;
+}
+.bubbleImage {
+  border-radius: 30px;
+}
+.filesContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 1000px) {
+  .bubbleLeft {
+    padding-top: 1rem;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 10% 80%;
+    overflow-x: hidden;
+  }
+  .bubbleLeft * {
+    overflow-x: hidden;
+  }
+  .bubbleRight {
+    padding-top: 1rem;
+    width: 100%;
+    margin-right: 2.5%;
+    position: relative;
+    display: grid;
+    justify-content: end;
+    grid-template-columns: 80% 10%;
+    overflow-x: hidden;
+  }
+  .bubbleRight * {
+    overflow-x: hidden;
+  }
+  .imageContainer {
+    padding: 0;
+  }
+  .textRight {
+    text-align: start;
+  }
+}

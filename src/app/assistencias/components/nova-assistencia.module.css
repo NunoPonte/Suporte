@@ -1,0 +1,492 @@
+.nova {
+  padding: 4rem 5%;
+  width: 90%;
+  display: grid;
+  grid-template-columns: 30% 67.5%;
+  gap: 2.5%;
+  position: relative;
+}
+.inputsContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 110px;
+  width: 300px;
+  gap: 0;
+}
+.inputsContainer label {
+  font-weight: 600;
+  font-size: 16px;
+  vertical-align: middle;
+  padding: 2.5px 0;
+}
+.inputsContainer input {
+  box-sizing: border-box;
+  margin: 0;
+  max-width: 100%;
+  background-color: #f5fcff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c2eefe;
+  height: 44px;
+}
+.inputsContainer input:focus {
+  outline: none;
+  color: transparent;
+  text-shadow: 0 0 0 #6e6b7b;
+  caret-color: #6e6b7b;
+}
+.selectContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.selectContainer select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  appearance: none;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c2eefe;
+  background-color: #f5fcff;
+}
+.selectContainer select:focus {
+  outline: none;
+}
+.selectContainer svg {
+  right: 0;
+  position: absolute;
+  padding: 1rem;
+  pointer-events: none;
+}
+.filePickerContainer {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.filePicker {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 298px;
+  height: 100%;
+  background-color: #f5fcff;
+  border-radius: 6px;
+  border: 1px solid #c2eefe;
+}
+.filePicker2 {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 78.651685% 21.348315%;
+  grid-template-columns: 1fr;
+  width: 300px;
+  height: 356px;
+  background-color: #f5fcff;
+  border-radius: 6px;
+  border: 1px solid #c2eefe;
+  overflow: hidden;
+}
+.hiddenFileInput {
+  display: none;
+}
+
+.customFileLabel {
+  all: unset;
+  width: 187px;
+  height: 36px;
+  display: inline-block;
+  color: #787878;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  font-weight: 600 !important;
+  font-size: 14px;
+  border: 1px solid #01aced;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.previewImage {
+  border-radius: 6px;
+  object-fit: cover;
+}
+.previewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.escolherContainer {
+  border-top: 1px solid #c2eefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.previewItem button {
+  all: unset;
+  flex: 1;
+  text-align: end;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
+.imageContainer {
+  width: 129px;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.previewImageSmall {
+  object-fit: contain;
+  border-radius: 6px;
+}
+.textContainer {
+  width: 100%;
+  height: 820px;
+  display: flex;
+  flex-direction: column;
+}
+.notaLabel {
+  font-weight: 600;
+  font-size: 16px;
+  vertical-align: middle;
+  padding-bottom: 8px;
+}
+.textAreaContainer {
+  position: relative;
+  min-height: 0;
+  height: 100%;
+  background-color: #f5fcff;
+  padding: calc(1rem - 14px) 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c2eefe;
+  font-weight: 500;
+  line-height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
+}
+.textAreaContainer div {
+  height: 100%;
+}
+/* .textAreaIos {
+  all: unset;
+  width: 100%;
+  height: 100%;
+} */
+.buttonSubmitDesktop {
+  all: unset;
+  position: absolute;
+  cursor: pointer;
+  width: 140px;
+  height: 36px;
+  border: 2px solid #01aced;
+  background-color: rgba(1, 172, 237, 1);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 1);
+  right: 5%;
+  bottom: 0rem;
+}
+.buttonCancel2 {
+  all: unset;
+  position: absolute;
+  cursor: pointer;
+  width: 140px;
+  height: 36px;
+  border: 2px solid #01aced;
+  background-color: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  color: #01aced;
+  right: calc(7.5% + 144px);
+  bottom: 0rem;
+}
+
+.error {
+  border-color: #ea5455 !important;
+}
+
+.errorMessage {
+  visibility: hidden;
+  font-size: 12px;
+  color: #ea5455;
+  padding: 0;
+  margin: 0;
+}
+.errorMessage p {
+  padding: 14px 0;
+  margin: 0;
+}
+.show {
+  visibility: visible !important;
+}
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+}
+.buttonsContainer {
+  display: none;
+}
+.titleContainer {
+  display: none;
+}
+.previewItem {
+  display: flex;
+  align-items: center;
+  border: 1px solid #01aced;
+  border-radius: 6px;
+  padding: 6px 8px;
+  background: #fff;
+  height: 22px;
+  margin-top: 1rem;
+  width: 248px;
+}
+
+.previewThumb {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previewImage {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.previewInfo {
+  margin-right: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.previewName {
+  font-size: 14px;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Hanken Grotesk;
+  font-weight: 300;
+  line-height: 22px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.previewType {
+  font-size: 12px;
+  color: #888;
+  margin-top: 2px;
+}
+
+.previewRemove {
+  background: none;
+  border: none;
+  margin-left: 12px;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .buttonSubmitDesktop {
+    display: none;
+  }
+  .nova {
+    padding: 0;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2%;
+    width: 100%;
+  }
+  .titleContainer {
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+    color: #01aced;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .titleContainer h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .dimensions {
+    width: 16px;
+    height: 16px;
+  }
+  .inputsContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .inputsContainer label {
+    margin-top: 0rem;
+    font-size: 14px;
+    color: #929292;
+  }
+  .inputsContainer input {
+    width: 100%;
+  }
+  .selectContainer select {
+    width: 100%;
+  }
+  .filePickerContainer {
+    width: 321px;
+    height: 100%;
+
+    padding: 0;
+  }
+  .filePickerLabel {
+    margin-top: 0rem;
+    font-size: 14px;
+    color: #929292;
+  }
+  .errorMessage {
+    font-size: 0.7rem;
+    line-height: 1.4rem;
+  }
+  .errorMessage p {
+    padding: 0;
+    margin: 0;
+  }
+  .filePicker {
+    height: 254px;
+    width: 319px;
+  }
+  .filePicker2 {
+    height: 254px;
+    grid-template-rows: auto 60px;
+    width: 321px;
+  }
+  .customFileLabel {
+    all: unset;
+    width: 60%;
+    height: 36px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #787878;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #01aced;
+  }
+  .previewContainer {
+    height: 185px;
+  }
+  .notaLabel {
+    margin-top: 0rem;
+    font-size: 14px;
+    color: #929292;
+  }
+  .textAreaContainer {
+    height: 254px;
+    padding: calc(1rem - 14px) 1rem;
+    font-size: 14px;
+    line-height: 16px;
+    color: #929292;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .buttonSubmit {
+    all: unset;
+    position: relative;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    width: 100%;
+    bottom: 0rem;
+    right: 0rem;
+    border: 2px solid #01aced;
+    background-color: rgba(1, 172, 237, 1);
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    color: rgba(255, 255, 255, 1);
+  }
+  .buttonCancel2 {
+    display: none;
+  }
+  .buttonCancel {
+    all: unset;
+    position: relative;
+    height: 36px;
+    font-size: 14px;
+    line-height: 36px;
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid #01aced;
+    background-color: none;
+    border-radius: 6px;
+    font-weight: 500;
+    text-align: center;
+    vertical-align: middle;
+    color: #01aced;
+  }
+  .buttonsContainer {
+    margin: 4rem auto 1rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 321px;
+    height: 44px;
+    gap: 2rem;
+  }
+  .none {
+    display: none;
+  }
+  .textContainer {
+    height: auto;
+    width: 321px;
+    margin: 0 auto;
+  }
+  .inputContainer {
+    width: 321px;
+  }
+  .previewItem button {
+    all: unset;
+    cursor: pointer;
+    border-radius: 6px;
+    justify-content: end;
+    display: flex;
+    width: 24px;
+    flex: 1;
+  }
+}

@@ -1,0 +1,33 @@
+.paginationButtons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.paginationButtons button {
+  all: unset;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  line-height: 12px;
+  text-align: center;
+}
+.paginationButtons button:hover {
+  color: #01aced;
+  background-color: #f5fcff;
+}
+.selected {
+  background-color: #01aced !important;
+  color: white !important;
+}
+.notSelected {
+  background-color: transparent;
+}
+.active {
+  color: #01aced;
+}
+.inactive {
+  color: #e3e3e3;
+}

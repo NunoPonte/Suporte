@@ -1,0 +1,25 @@
+.textArea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  resize: none;
+  white-space: normal;
+  word-break: break-word;
+  padding: 0.5rem;
+  overscroll-behavior: contain;
+}
+
+.textArea:focus {
+  outline: none;
+  color: #6e6b7b;
+  caret-color: #6e6b7b;
+}
+.textArea img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
+}

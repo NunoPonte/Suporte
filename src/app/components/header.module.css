@@ -1,0 +1,102 @@
+.headerContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("/HeaderBackground.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.headerImage {
+  z-index: -1;
+}
+.overlay {
+  max-width: 100%;
+  height: 100%;
+  position: inherit;
+  padding: 2rem 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.headerContent {
+  position: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.headerUserContainer {
+  display: flex;
+}
+.headerUser {
+  position: inherit;
+  padding-right: 1rem;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 40px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  line-height: 64px;
+  vertical-align: middle;
+  z-index: 10;
+}
+.userImage {
+  border-radius: 40px;
+}
+.headerUserContainer button {
+  all: unset;
+  background: #01171f;
+  border-radius: 40px;
+  padding: 0 1rem 0 4rem;
+  margin-left: -3rem;
+  font-weight: 500;
+  line-height: 32px;
+  vertical-align: middle;
+  color: #ffffff;
+  cursor: pointer;
+}
+.overlay h1 {
+  font-weight: 800;
+  font-size: 48px;
+  /* 64px */
+  line-height: 64px;
+  letter-spacing: 0%;
+  color: #ffffff;
+}
+.overlay h1 span {
+  color: #00aced;
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .chat {
+    display: none;
+  }
+  .headerContainer {
+    background-image: url("/HeaderBackgroundMobile.svg");
+    height: 404px;
+  }
+  .headerContent {
+    display: none;
+  }
+  .overlay h1 {
+    text-align: left;
+    padding-top: 170px;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 36px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: inline;
+  }
+}

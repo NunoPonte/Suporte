@@ -1,0 +1,205 @@
+.flex {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+.eightyPercent {
+  width: 80%;
+  box-sizing: border-box;
+}
+.chatContainer {
+  margin-top: 4rem;
+  position: relative;
+  width: 85%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-rows: 1fr 70px;
+  box-sizing: border-box;
+  position: relative;
+  border: 1px solid rgba(1, 172, 237, 1);
+  border-radius: 6px;
+  overflow: hidden;
+  min-height: 160px;
+  resize: vertical;
+}
+/* .chatContainer * {
+  overflow-x: hidden;
+} */
+.chatTextArea {
+  height: 100%;
+}
+.textAreaContainer {
+  padding: 0 2.5%;
+  position: relative;
+  width: 95%;
+  overflow-y: visible;
+  min-height: 70px;
+  height: auto;
+}
+.textAreaContainer .textArea div {
+  width: 100%;
+  height: 100%;
+}
+.bottomContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.previewContainer {
+  height: 46px;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.1rem;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+}
+.buttonFicheiros {
+  all: unset;
+  cursor: pointer;
+  margin-left: 27px;
+  color: #787878;
+}
+.buttonSend {
+  all: unset;
+  cursor: pointer;
+  width: 140px;
+  height: 36px;
+  margin-right: 15px;
+  border: 2px solid #01aced;
+  background-color: rgba(1, 172, 237, 1);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 1);
+}
+.buttonSair {
+  all: unset;
+  cursor: pointer;
+  width: 140px;
+  height: 36px;
+  border: 2px solid #01aced;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+
+  margin: auto auto calc(1rem + 1px) auto;
+}
+.buttonSair:hover {
+  color: #fff;
+  background-color: #01aced;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+  .chatTextArea {
+    width: calc(100% - (0.5rem + 42px));
+    height: 100%;
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+  .chatContainer {
+    margin: 0;
+    width: 100%;
+    height: 160px;
+    min-height: unset;
+    background-color: #01171fe5;
+    padding: 0 0;
+    border-color: transparent;
+    border-radius: 0;
+    resize: none;
+    display: flex;
+  }
+  .chatContainerExpanded {
+    z-index: 1000;
+    height: calc(100dvh - 200px);
+    margin: 0;
+    width: 100%;
+    background-color: #01171fe5;
+    padding: 0 0;
+    border-color: transparent;
+    border-radius: 0;
+    resize: none;
+    display: flex;
+  }
+  .textAreaContainer {
+    padding: 0;
+    position: relative;
+    margin-right: 2rem;
+    margin-top: 1rem;
+    height: calc(100% - 3rem);
+    background-color: white;
+    border-radius: 6px;
+    scrollbar-width: none;
+  }
+  .textAreaContainer * {
+    scrollbar-width: none;
+  }
+  .textAreaContainer p {
+    padding: 0;
+    margin: 0.25rem;
+  }
+  .leftContainer {
+    margin-top: 1rem;
+    width: 54px;
+    height: calc(100% - 3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .buttonExpand {
+    all: unset;
+    cursor: pointer;
+  }
+  .buttonFicheiros {
+    all: unset;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  .previewContainer {
+    min-height: 79px;
+    width: 95%;
+    padding-left: 5%;
+    border-bottom: 1px solid #333f43;
+    background-color: #1a2e35;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scrollbar-width: none;
+  }
+  .previewContainerExpanded {
+    display: none;
+  }
+  .buttonSend {
+    all: unset;
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    width: 42px;
+    height: 28px;
+    background-color: #01aced;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .buttonSair {
+    display: none;
+  }
+}

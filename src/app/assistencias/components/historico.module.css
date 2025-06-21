@@ -1,0 +1,488 @@
+.desktopOnly {
+  display: block;
+}
+.mobileOnly {
+  display: none !important;
+}
+
+.historico {
+  padding-top: 4rem;
+  width: 100%;
+}
+
+.gridHeader {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1.2fr 1.2fr;
+  align-self: center;
+  border-bottom: #e3e3e3 solid 1px;
+  padding-bottom: 9px;
+}
+
+.gridRow {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.5fr 1.2fr 1.2fr;
+  align-items: center;
+  height: 54px;
+  border-bottom: #e3e3e3 solid 1px;
+}
+
+.selectContainer {
+  width: 240px;
+}
+
+.headerSearchRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.headerLabel {
+  font-family: Raleway;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0;
+  vertical-align: middle;
+  color: #000000;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  background: #f5fcff;
+  border-radius: 0.5rem;
+  border: 1px solid #c2eefe;
+  padding: 0 0.5rem;
+  height: 44px;
+  margin-bottom: 0.5rem;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.headerFiltersRow {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.headerFilter {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  min-width: 140px;
+}
+
+.dateInput {
+  background: #f5fcff;
+  border-radius: 0.5rem;
+  border: 1px solid #c2eefe;
+  height: 42px;
+  outline: none;
+  width: 206px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.sortContainer {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.notificationButtonVer {
+  background: #fff !important;
+  color: #000000 !important;
+  border: 2px solid #01aced !important;
+  font-weight: 500 !important;
+}
+.notificationButtonVer:hover {
+  background: #01aced !important;
+  color: #ffffff !important;
+}
+
+.searchContainer,
+.searchContainerNumero {
+  display: flex;
+  align-items: center;
+  background: #f5fcff;
+  border-radius: 0.5rem;
+  border: 1px solid #c2eefe;
+  padding: 0 0.5rem;
+  height: 42px;
+  margin-bottom: 0.5rem;
+}
+
+.searchContainer input,
+.searchContainerNumero input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.searchContainer input:focus,
+.searchContainerNumero input:focus {
+  outline: none;
+}
+
+.searchContainerImage,
+.searchContainerNumeroImage {
+  margin-right: 0.5rem;
+}
+
+.sortContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sortContainer button {
+  all: unset;
+  cursor: pointer;
+  height: 16px;
+}
+
+.gridBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.cell {
+  font-size: 15px;
+  font-weight: 500;
+  color: #222;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cell:nth-child(1) {
+  width: 314px;
+}
+
+.notificationContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.notificationButton {
+  background-color: #01aced;
+  color: #fff;
+  font-weight: 700;
+  width: 140px;
+  height: 36px;
+  border: 2px solid #01aced;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.notificationButton:hover {
+  background: #0090c5;
+  color: #fff;
+}
+
+.pedidosVistos {
+  visibility: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.showPedidosVistos {
+  visibility: visible;
+}
+
+.pedidosVistos h1 {
+  font-weight: 500;
+  font-size: 12px;
+  color: #787878;
+  margin-left: 0.5rem;
+}
+
+.paginationContainer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.countContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.countContainer h6 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.goTop {
+  all: unset;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 12px;
+  color: #787878;
+  justify-self: flex-end;
+}
+
+.goTop:hover {
+  text-decoration: underline;
+}
+
+.datePickerPopper {
+  border-radius: 12px !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18) !important;
+  overflow: hidden;
+}
+
+.meses,
+.ano {
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  width: 55px;
+}
+.botoes {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 7px;
+}
+.botoes:hover {
+  background: #f5fcff;
+  border-radius: 6px;
+}
+
+.headerTittle{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: space-between;
+  width: 240px;
+  height: 16px;
+}
+
+@media (max-width: 1400px){
+  .searchContainer{
+    width: 182px;
+  }
+  .dateInput{
+    width: 166px;
+  }
+  .selectContainer{
+    width: 200px;
+  }
+  .headerTittle{
+    width: 200px;
+  }
+}
+
+@media (max-width: 1200px){
+  .searchContainer{
+    width: 182px;
+  }
+  .dateInput{
+    width: 116px;
+  }
+  .selectContainer{
+    width: 150px;
+  }
+  .headerTittle{
+    width: 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .desktopOnly {
+    display: none !important;
+  }
+  .mobileOnly {
+    display: block !important;
+  }
+
+  .searchContainer{
+    width: 98%;
+    padding: 0 1%;
+  }
+
+  .gridRow {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    max-height: 216px;
+    margin-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .cell:nth-child(1) {
+    align-self: start;
+  }
+
+  .cell.pedidoSobre::before {
+    content: "Pedido sobre";
+    display: block;
+    color: #929292;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 0.1rem;
+  }
+  .cell.pedidoSobre span {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: #000000;
+    display: block;
+    margin-bottom: 28px;
+    margin-top: 6px;
+  }
+
+  .infoRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  .infoCell {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+  .infoCell label {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #929292;
+  }
+  .infoCell span {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #000000;
+  }
+
+  .notificationContainer {
+    justify-content: flex-start;
+    align-self: flex-end;
+  }
+  .notificationButton {
+    width: 100%;
+    min-width: 120px;
+    font-size: 14px;
+    height: 40px;
+  }
+  .gridHeader {
+    padding-bottom: 24px;
+  }
+  .headerFiltersRow {
+    flex-direction: column;
+    align-self: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+  }
+  .headerSearchRow {
+    width: 100%;
+    align-self: center;
+    padding-bottom: 24px;
+  }
+  .headerFilter {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .paginationContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+  }
+
+  .pagination {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 24px;
+  }
+
+  .countContainer {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 15px;
+    margin-bottom: 0.2rem;
+    margin-top: 0;
+  }
+
+  .countContainer h6 {
+    font-size: 15px;
+    margin: 0;
+  }
+  .goTop {
+    margin-bottom: 72px;
+  }
+
+  .dateInput {
+    width: 98%;
+    padding: 0 1%;
+    margin: 0;
+  }
+  .searchContainer {
+    margin-top: 16px;
+    margin-bottom: 0;
+  }
+  .selectContainer {
+    width: 100%;
+  }
+  .cell,
+  .pedidoSobre span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
